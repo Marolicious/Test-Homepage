@@ -6,17 +6,18 @@
 body, html {
 	width: 100%;
 	height: 100%; /* To make sure that body&html always cover 100% of the screen */
+	font-size: 100%;
 }
 
-/*
-This is a perfect way to add a responsive full-sized background image:
-html {
-	background: url() no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}*/
+.mainbody {
+	margin: 0px 10px;
+	padding: 15px 15px 15px 15px;
+	line-height: 1.8rem;
+}
+
+.exampleimages {
+	display: inline-block;
+}
 
 .navbar {
 	background-color: #98dff8;
@@ -34,6 +35,12 @@ html {
 .pattern-cross-dots-xl {
 	background-color: #98dff8;
 	color: #d9f5f8;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+	
 }
 
 .btn-custom1 {
@@ -55,13 +62,117 @@ html {
 hr {
 	margin: 10px auto; /* This line of code is necessary to center the line */
 	color: #f24e7e;
-	border: 3px solid #f24e7e;
+	border: 2px solid #f24e7e;
 	max-width: 65px;
 	opacity: 1;
 }
 
-.buffer {
-	height: 1rem;
+.navbar-brand {
+	max-width: 10%;
+}
+
+.heading {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	font-weight: bold;
+	padding: 5px 20px;
+	border-radius: 25px;
+	background-color: #29abe0;
+	width: fit-content;
+}
+
+h3 {
+	text-align: left;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+
+.maintext {
+
+}
+
+li h5{
+	font-weight: 500;
+	padding: 5px 12px;
+	border-radius: 25px;
+	background-color: #d9f5f8;
+	width: fit-content;
+}
+
+li .price {
+	font-weight: bold;
+}
+
+h5 .price {
+	font-weight: normal;
+}
+
+ul li {
+	padding-bottom: 5px;
+}
+
+.nopadli {
+	padding: 0px;
+}
+
+.box > img {
+    width: 100%;
+}
+
+.collapsible {
+	color: #29abe0;
+	cursor: pointer;
+	font-weight: bold;
+	border: none;
+}
+
+.collapsible_content {
+    background-color: #d9f5f8;
+	padding: 15px 15px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	width: fit-content;
+}
+
+.collapsible_content > img {
+    width: 100%;
+}
+
+.collapsible_content_small {
+    background-color: #d9f5f8;
+	padding: 15px 15px;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	width: fit-content;
+}
+
+.collapsible_content_small > img {
+    width: 100%;
+}
+
+.footertext {
+	text-align: center;
+	color: #1c292d;
+	font-size: 80%;
+	padding-right: 15px;
+	padding-bottom: 5px;
+}
+
+#divfooter {
+	
+}
+
+a {
+	color: #29abe0;
+	font-weight: bold;
 }
 
 /* #d9f5f8 light blue */
